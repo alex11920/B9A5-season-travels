@@ -156,7 +156,7 @@
             </div>
 
             <!-- available area -->
-            <div class="flex flex-1 bg-white py-8 w-[1170px] mx-72 rounded-3xl gap-10 items-center justify-center">
+            <div class="flex flex-1 bg-white py-8 mx-72 rounded-3xl gap-10 items-center justify-center">
 
                 <!-- left part -->
                 <div>
@@ -218,7 +218,7 @@
 
 
             <!-- Ticket Cutter Area -->
-            <div id="ticketArea" class="flex flex-1 w-[1170px] gap-12 bg-white p-14 mx-72 rounded-3xl mt-7">
+            <div id="ticketArea" class="flex flex-1 gap-12 bg-white p-14 mx-72 rounded-3xl mt-7">
 
 
                 <!-- left area -->
@@ -292,42 +292,37 @@
                             <div class="grid grid-flow-col gap-1 items-center">
                                 <p>Seat</p>
                                 <!-- seat number addition -->
-                                <p class="py-1 px-2 bg-primary rounded-full text-white text-xs">0</p>
+                                <p id="seatInc" class="py-1 px-2 bg-primary rounded-full text-white text-xs">0</p>
                             </div>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
                         <hr class="border-dashed border-[#03071233]">
-                        <div>
-                            <div class="flex justify-between gap-4 text-secondary">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
-                            <div class="flex justify-between gap-4 text-secondary">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
+                        <!-- Popping Area -->
+                        <div id="popper" class="flex justify-between gap-4 text-secondary hidden">
+                            <p id="seatName"></p>
+                            <p>Economy</p>
+                            <p>550</p>
                         </div>
                         <hr class="border-[#03071233]">
                         <div class="flex justify-between text-black font-medium">
                             <p>Total Price</p>
                             <p>BDT <span>0</span></p>
                         </div>
-
+                    
                         <!-- coupon code area -->
                         <label class="input input-bordered flex items-center gap-2 p-8 border-none">
                             <input type="text" class="grow" placeholder="Have any coupon?" />
                             <button class="bg-primary px-6 py-3 text-white font-semibold rounded-lg">Apply</button>
                         </label>
-
+                    
                         <!-- Grand Total area -->
                         <div class="flex justify-between text-black font-medium">
                             <p>Grand Total</p>
                             <p>BDT <span>0</span></p>
                         </div>
                     </div>
+                    
 
 
                     <!-- NEXT button -->
